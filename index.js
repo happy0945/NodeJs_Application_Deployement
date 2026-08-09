@@ -9,6 +9,10 @@ app.get("/",(req,res)=>{
     res.send("Hello from Express and Nodejs!");
 })
 
+app.get("/about", (req,res)=>{
+    res.send("This is the about page");
+})
+
 app.listen(PORT,()=>{
     console.log(`Server listing at PORT: ${PORT}`)
 })
