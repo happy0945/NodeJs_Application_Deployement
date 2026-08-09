@@ -12,6 +12,9 @@ app.get("/",(req,res)=>{
 app.get("/about", (req,res)=>{
     res.send("This is the about page");
 })
+app.get("/home", (req,res)=>{
+    res.send("This is the home page");
+})
 
 app.listen(PORT,()=>{
     console.log(`Server listing at PORT: ${PORT}`)
